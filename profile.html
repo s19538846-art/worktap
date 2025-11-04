@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/hamburgers.min.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Профиль</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="bg-[#F7F6FF] relative">
+        <header
+          class="header max-w-7xl m-auto flex flex-row justify-between items-center text-[16px] py-5"
+        >
+          <img class="w-30 md:w-50" src="./images/worktap_logo1.svg" alt="" />
+          <div
+            class="navbar flex flex-col md:flex-row justify-between items-center gap-10"
+          >
+            <nav
+              class="nav flex justify-between items-center gap-10 text-black font-medium text-[16px]"
+            >
+              <a class="hover:text-green-600" href="./exchange.html">Биржа</a>
+              <a class="hover:text-green-600" href="./works.html">Ворки</a>
+              <a class="hover:text-green-600" href="">Конкурсы</a>
+              <a class="hover:text-green-600" href="./index.html">Создать заказ</a>
+            </nav>
+            <div
+              class="flex flex-row justify-between items-center gap-3 font-semibold cursor-pointer"
+            >
+              <button>
+                <img src="./images/exchange_page/FavoriteMajor 1.svg" alt="" />
+              </button>
+              <button>
+                <img
+                  src="./images/exchange_page/NotificationMajor (1) 1.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                <img src="./images/exchange_page/ChatMajor 1.svg" alt="" />
+              </button>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <button class="flex flex-row justify-between items-center gap-5">
+                <span class="font-semibold">Ернар Ибрагимов</span>
+                <img
+                  class="w-10 md:w-20"
+                  src="./images/exchange_page/user_avatar.svg"
+                  alt=""
+                />
+                <img
+                  src="./images/exchange_page/akar-icons_chevron-down.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <button
+            class="hamburger hamburger--collapse"
+            id="hamburger"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </header>
+        <div
+          class="absolute left-0 max-w-55 bg-[#FBA457] rounded-e-full flex flex-row justify-center items-center gap-2 px-10 py-5 text-[#F6FAFD] font-bold text-[16px]"
+        >
+          <a href="">Быстрый поиск ворков</a>
+          <img src="./images/profile_page/akar-icons_chevron-down.svg" alt="" />
+        </div>
+        <div
+          class="max-w-7xl m-auto flex flex-col md:flex-row justify-between items-center pb-50"
+        >
+          <div class="flex flex-col justify-between items-start gap-2.5 pt-5">
+            <h2 class="text-[#FBA457] font-semibold text-[18px]">Дизайнер</h2>
+            <h1 class="font-semibold text-4xl">
+              <span class="text-[#1DBF73] font-semibold text-4xl">Ернар</span>
+              Ибрагимов
+            </h1>
+            <p class="font-normal text-sm py-2.5">
+              Работаю дизайнером с 1999 года. <br />
+              Был опыт в газетах, журналах, типографиях, рекламных агентствах,
+              издательских домах... Порядка 8 лет, занимаюсь логотипами и
+              фирменными стилями.
+            </p>
+            <div
+              class="flex font-normal text-sm flex-wrap gap-5 cursor-pointer py-5"
+            >
+              <div
+                class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]"
+              >
+                Figma
+              </div>
+              <div class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+                Adobe photoshop
+              </div>
+              <div class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+                Adobe illustrator
+              </div>
+              <div class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+                Corel draw
+              </div>
+              <div class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+                Adobe After Effects
+              </div>
+              <div class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+                HTML/CSS
+              </div>
+            </div>
+            <button
+              class="flex flex-row justify-between items-center w-full bg-[#F2F0FE] rounded-[20px] px-10 py-5 mt-7"
+            >
+              <span class="font-medium text-[18px]"
+                >Показать подробную информацию</span
+              >
+              <img
+                src="./images/profile_page/akar-icons_chevron-down_black.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <img src="./images/profile_page/hero.png" alt="" />
+        </div>
+      </section>
+      <section class="bg-[#F6FAFD]">
+        <div class="max-w-7xl m-auto pt-15">
+          <h2 class="font-semibold text-2xl">Мой ворки</h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 pt-10"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <button
+                class="font-semibold text-3xl text-[#1DBF73] flex flex-col justify-center items-center gap-5"
+              >
+                <img src="./images/profile_page/add_btn.svg" alt="" />
+                <span>Создать ворк</span>
+              </button>
+            </div>
+            <div class="flex flex-col justify-between items-start gap-5">
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div class="flex flex-col justify-between items-start gap-5">
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between items-start gap-5">
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div class="flex flex-col justify-between items-start gap-5">
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between items-start gap-5">
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div class="flex flex-col justify-between items-start gap-5">
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border box-shadow border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border box-shadow border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start gap-5 border border-[#F2F0FE] rounded-2xl"
+            >
+              <img src="./images/profile_page/card_1.svg" alt="" />
+              <div
+                class="flex flex-col justify-between items-start gap-5 px-5 pb-5"
+              >
+                <h3 class="textfont-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[#1DBF73] text-[18px]">
+                  50 000 тенге
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row justify-center items-center py-15">
+             <button
+               class="text-[#1DBF73] border border-[#1DBF73] rounded-[40px] font-semibold text-[18px] py-4 px-12"
+             >
+               Загрузить еще
+             </button>
+           </div>
+        </div>
+      </section>
+      <section class="bg-[#F6FAFD]">
+        <div class="max-w-7xl m-auto pb-10">
+            <h2 class="font-semibold text-2xl">Отзывы</h2>
+            <div class="flex gap-10 py-5">
+                <span class="text-[#1DBF73] font-semibold text-[16px]">Положительные (65)</span>
+                <span class="font-normal text-[16px]">Отрицательные(10)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 pt-5">
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+                <div class="flex flex-col items-start gap-5 p-5 border border-[#F2F0FE] rounded-[20px]">
+                    <div class="flex flex-row justify-start items-center gap-5">
+                        <img src="./images/profile_page/Grey_Ellipse 70.svg" alt="">
+                        <div class="flex flex-col justify-between gap-5 ">
+                            <h3 class="font-semibold text-[18px]">Никита Евреев</h3>
+                            <img src="./images/profile_page/Stars_Group 17.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="font-normal text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. </p>
+                </div>
+            </div>
+             <div class="flex flex-row justify-center items-center py-10">
+             <button
+               class="text-[#1DBF73] border border-[#1DBF73] rounded-[40px] font-semibold text-[18px] py-4 px-12"
+             >
+               Загрузить еще
+             </button>
+           </div>
+        </div>
+      </section>
+       <footer class="bg-[#F2F0FE] text-[#222]">
+        <div
+          class="max-w-7xl m-auto flex flex-col md:flex-row justify-between items-start py-12"
+        >
+          <div class="">
+            <h3 class="font-bold text-2xl pb-7">Топ Категории</h3>
+            <nav
+              class="flex flex-col justify-between items-start gap-2 font-normal text-sm"
+            >
+              <a href="">Тексты и переводы</a>
+              <a href="">Разработка</a>
+              <a href="">Дизайн</a>
+              <a href="">Аудио,видео монтаж </a>
+              <a href="">Соцсети и реклама</a>
+              <a href="">Бизнес и жизнь</a>
+              <a href="">SEO и оптимизация</a>
+            </nav>
+          </div>
+          <div>
+            <h3 class="font-bold text-2xl pb-7">О Проекте</h3>
+            <nav
+              class="flex flex-col justify-between items-start gap-2 font-normal text-sm"
+            >
+              <a href="">О Нас</a>
+              <a href="">Как Это Работает</a>
+              <a href="">Политика Приватности</a>
+              <a href="">Правила Пользования</a>
+              <a href="">Пресса о нас</a>
+            </nav>
+          </div>
+          <div>
+            <h3 class="font-bold text-2xl pb-7">Поддержка</h3>
+            <nav
+              class="flex flex-col justify-between items-start gap-2 font-normal text-sm"
+            >
+              <a href="">Контакты</a>
+              <a href="">Политика Безопасности</a>
+              <a href="">FAQ</a>
+            </nav>
+          </div>
+          <div>
+            <h3 class="font-bold text-2xl pb-7">Follow</h3>
+            <div class="flex flex-row justify-between items-center gap-7">
+              <a href="">
+                <img src="./images/akar-icons_facebook-fill.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/exchange_page/green_twitter.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./images/insta.svg" alt="" />
+              </a>
+              <a href="">
+                <img
+                  src="./images/entypo-social_linkedin-with-circle.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="max-w-7xl m-auto text-center font-medium text-[16px] pb-25">
+          Copyright @ 2021 | WorkTap – Worktap.KZ. All Rights Reserved
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.wrapper{
+    font-family:  Montserrat, sans-serif;
+    /* overflow: hidden; */
+}
+
+.hamburger--collapse{
+    display: none;
+}
+@media (max-width: 768px) {
+    .header{
+        margin-bottom: 100px;
+    }
+    .auth{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    .navbar{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav{
+        display: none;
+    }
+    .hamburger--collapse{
+        display: block;
+    }
+}
+.box-shadow{
+   box-shadow: 0 16px 16px 0 rgba(34, 34, 34, 0.04);
+}
+.bg-yellow{
+    background: linear-gradient(180deg, #E2A401 -1.38%, #E6A901 17.18%, #E3A401 28.99%, #E5A800 43.17%, #EEB301 77.27%, #EFB400 100%);
+}
