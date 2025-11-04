@@ -13,7 +13,9 @@
       <header
         class="header max-w-7xl m-auto flex flex-row justify-between items-center text-[16px] py-5"
       >
-        <img class="w-30 md:w-50" src="./images/worktap_logo1.svg" alt="" />
+        <a href="./index.html">
+          <img class="w-30 md:w-50" src="./images/worktap_logo1.svg" alt="" />
+        </a>
         <div
           class="navbar flex flex-col md:flex-row justify-between items-center gap-10"
         >
@@ -23,7 +25,9 @@
             <a class="hover:text-green-600" href="./exchange.html">Биржа</a>
             <a class="hover:text-green-600" href="./works.html">Ворки</a>
             <a class="hover:text-green-600" href="">Конкурсы</a>
-            <a class="hover:text-green-600" href="./index.html">Создать заказ</a>
+            <a class="hover:text-green-600" href="./index.html"
+              >Создать заказ</a
+            >
           </nav>
           <div
             class="flex flex-row justify-between items-center gap-3 font-semibold cursor-pointer"
@@ -45,7 +49,7 @@
             <button class="flex flex-row justify-between items-center gap-5">
               <span class="font-semibold">Ернар Ибрагимов</span>
               <img
-                class="w-10 md:w-20"
+                class="w-10 md:w-15"
                 src="./images/exchange_page/user_avatar.svg"
                 alt=""
               />
@@ -67,14 +71,12 @@
         </button>
       </header>
       <section class="max-w-7xl m-auto">
-        <div
-          class="flex flex-row justify-center items-center py-5"
-        >
+        <div class="flex flex-row justify-center items-center py-5">
           <div
-            class="rounded-[50px] bg-[#F2F0FE] flex flex-row justify-between text-[16px]"
+            class="max-w-160 w-full rounded-[50px] bg-[#F2F0FE] flex flex-row justify-between text-[16px]"
           >
             <input
-              class="py-5 px-5 font-medium w-full"
+              class="py-5 px-5 font-medium w-full outline-none"
               type="text"
               placeholder="Какую работу ищете?"
             />
@@ -93,25 +95,25 @@
           >
             Тексты и переводы
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Разработка
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Дизайн
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Аудио, видео монтаж
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             SEO и оптимизация
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Бизнес и жизнь
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Соцсети и реклама
           </button>
-          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px]">
+          <button class="border border-[#F2F0FE] px-5 py-2.5 rounded-[50px] hover:border-[#FBA457] hover:text-[#FBA457]">
             Все категории
           </button>
         </div>
@@ -121,19 +123,25 @@
           <div class="flex flex-col md:flex-row justify-between py-10">
             <h2 class="font-semibold text-2xl">65 ворков по дизайну</h2>
             <div
-              class="flex flex-row justify-between items-center gap-2 font-normal text-sm"
+              class="flex flex-col md:flex-row justify-between items-center gap-2 font-normal text-sm"
             >
-              <p
-                class="text-[#656084] border border-[#F2F0FE] rounded-[20px] py-3 px-7"
-              >
-                Минимальная цена
-              </p>
+              <input
+                class="text-[#656084] border border-[#F2F0FE] rounded-[20px] py-3 pl-8"
+                min="0"
+                type="number"
+                name=""
+                id=""
+                placeholder="Минимальная цена"
+              />
               <span>—</span>
-              <p
-                class="text-[#656084] border border-[#F2F0FE] rounded-[20px] py-3 px-7"
-              >
-                Максимальная цена
-              </p>
+              <input
+                class="text-[#656084] border border-[#F2F0FE] rounded-[20px] py-3 pl-6"
+                min="0"
+                type="number"
+                name=""
+                id=""
+                placeholder=" Максимальная цена"
+              />
             </div>
             <div
               class="flex flex-row justify-between gap-5 border border-[#F2F0FE] rounded-[20px] py-2.5 px-5"
@@ -146,425 +154,587 @@
               />
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 pb-15">
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 pb-15"
+          >
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px] ">
+            <div
+              class="flex flex-col gap-5 border border-[#F2F0FE] rounded-[10px]"
+            >
               <img src="./images/works_page/card_img.svg" alt="" />
               <div class="flex flex-col gap-5 px-5 pb-5">
-                  <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
-                  <p class="font-semibold text-[18px] text-[#1DBF73]">50 000 тенге</p>
-                  <div class="flex flex-row items-center gap-2">
-                    <img
-                      class="max-w-30 w-full"
-                      src="./images/exchange_page/card_icon.svg"
-                      alt=""
-                    />
-                    <div class="flex flex-col justify-between items-start gap-3">
-                      <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
-                      <p class="font-normal text-[#B0AAD0] text-sm">
-                        Выполнено проектов: 45 
-                      </p>
-                    </div>
+                <h3 class="font-semibold text-[18px]">Дизайн сайта</h3>
+                <p class="font-semibold text-[18px] text-[#1DBF73]">
+                  50 000 тенге
+                </p>
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class="max-w-20 w-full"
+                    src="./images/exchange_page/card_icon.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col justify-between items-start gap-3">
+                    <h3 class="font-medium text-[16px]">Екатерина Иванова</h3>
+                    <p class="font-normal text-[#B0AAD0] text-sm">
+                      Выполнено проектов: 45
+                    </p>
                   </div>
-                  <img class="max-w-[150px]" src="./images/works_page/Group 74.svg" alt="" />
+                </div>
+                <img
+                  class="max-w-30"
+                  src="./images/works_page/Group 74.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -621,16 +791,17 @@
             <h3 class="font-bold text-2xl pb-7">Follow</h3>
             <div class="flex flex-row justify-between items-center gap-7">
               <a href="">
-                <img src="./images/akar-icons_facebook-fill.svg" alt="" />
+                <img class="w-7" src="./images/akar-icons_facebook-fill.svg" alt="" />
               </a>
               <a href="">
-                <img src="./images/exchange_page/green_twitter.svg" alt="" />
+                <img class="w-7" src="./images/exchange_page/green_twitter.svg" alt="" />
               </a>
               <a href="">
-                <img src="./images/insta.svg" alt="" />
+                <img class="w-7" src="./images/insta.svg" alt="" />
               </a>
               <a href="">
                 <img
+                  class="w-7"
                   src="./images/entypo-social_linkedin-with-circle.svg"
                   alt=""
                 />
